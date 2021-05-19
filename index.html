@@ -3,6 +3,11 @@
 <head>
     <title> Photo Gallery </title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,35 +36,85 @@
         <img class="img2" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/f/f7/Flareon.jpg?width=1280">
         <img class="img2" src="https://pokemongo.gamepress.gg/sites/pokemongo/files/2018-04/471.png"> <br>
         <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRU7pIMQpq2Jjbw2kUfmmwTjROAZ9YBtFng&usqp=CAU">
-        <img class="img2" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/4/47/Jolteon.jpg?width=1280">
+        <img class="img2" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/4/47/Jolteon.jpg?width=1280"> <br>
+        <img id = "EspeonPic" src = "https://cdn2.bulbagarden.net/upload/thumb/a/a7/196Espeon.png/1200px-196Espeon.png">
     </section>
-   
-        <section id="slides">
-            <h1> Sliding Gallery </h1>
-            <div class="line"> </div>
-            <div id="slides" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <center> <a> <img class="img-responsive" src="http://static.pokemonpets.com/images/monsters-images-800-800/133-Eevee.png"> </a>
-                            <div class="carousel-content">
-                                <p> Eevee </p>
-                            </div>
-                        </center>
-                    </div>
-                    <div class="item ">
-                        <center> <a> <img class="img-responsive" src="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-05-20-10-54/eevee_evolution_sylveon.jpg/EG11/resize/480x-1/quality/75/format/jpg"> </a>
-                            <div class="carousel-content">
-                                <p> Sylveon</p>
-                            </div>
-                        </center>
-                    </div>
+
+    <section id="slides">
+        <h1> Sliding Gallery </h1>
+        <div class="line"> </div>
+        <div id="Slidess" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center> <img class="img-responsive" src="http://static.pokemonpets.com/images/monsters-images-800-800/133-Eevee.png">
+                        <div class="carousel-content">
+                            <p> Eevee </p>
+                        </div>
+                    </center>
                 </div>
-                <a class="left carousel-control" href="#slides" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                <a class="right carousel-control" href="#slides" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-
-
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-05-20-10-54/eevee_evolution_sylveon.jpg/EG11/resize/480x-1/quality/75/format/jpg">
+                        <div class="carousel-content">
+                            <p> Sylveon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRU7pIMQpq2Jjbw2kUfmmwTjROAZ9YBtFng&usqp=CAU">
+                        <div class="carousel-content">
+                            <p> Umbreon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/9/9c/Vaporeon.jpg?width=1280">
+                        <div class="carousel-content">
+                            <p> Vaporeon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/f/f7/Flareon.jpg?width=1280">
+                        <div class="carousel-content">
+                            <p> Flareon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/4/47/Jolteon.jpg?width=1280">
+                        <div class="carousel-content">
+                            <p> Jolteon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://img.pokemondb.net/artwork/large/leafeon.jpg">
+                        <div class="carousel-content">
+                            <p> Leafeon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://pokemongo.gamepress.gg/sites/pokemongo/files/2018-04/471.png">
+                        <div class="carousel-content">
+                            <p> Glaceon</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center> <img class="img-responsive" src="https://cdn2.bulbagarden.net/upload/thumb/a/a7/196Espeon.png/1200px-196Espeon.png">
+                        <div class="carousel-content">
+                            <p> Espeon</p>
+                        </div>
+                    </center>
+                </div>
             </div>
-   
+            <a class="left carousel-control" href="#Slidess" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+            <a class="right carousel-control" href="#Slidess" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+
+
+        </div>
+
 
 
     </section>
